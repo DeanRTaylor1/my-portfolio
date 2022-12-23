@@ -60,8 +60,8 @@ const Projects: React.FC = () => {
             id='projects'
             className='w-[calc(36rem)] h-fit bg-white shadow-2xl rounded-md px-8 py-4 text-xl font-bold relative flex justify-center items-center group gap-6'
           >
-            <Github size={100} />
-            <h3 className='font-extrabold text-3xl drop-shadow-2xl'>
+            <Github size={60} />
+            <h3 className='font-extrabold text-xl drop-shadow-2xl'>
               Checkout My github
             </h3>
             <div className='flex flex-col w-full h-full justify-center items-center rounded-md  absolute top-0 left-0 z-10 opacity-0 group-hover:opacity-100 text-white  bg-zinc-400 bg-opacity-75 transition-all ease-in-out duration-300'>
