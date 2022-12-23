@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
           >
             <Image
               className='w-[calc(34rem)] h-[calc(32rem)] z-0'
-              alt='Profile Image'
+              alt='nhimsallyfilm website image'
               src={
                 'https://my-portfolio-deanrtaylor.s3.ap-southeast-1.amazonaws.com/nhimsallysite.png'
               }
