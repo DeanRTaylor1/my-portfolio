@@ -1,11 +1,21 @@
 import Image from 'next/image';
 import { Fragment } from 'react';
 import { Backend, Frontend, Deployment } from '../Icons';
+import { motion } from 'framer-motion';
 
 const Tools: React.FC = () => {
   return (
     // I had to use a calculated height because it would not pick up the Layouts assigned height
-    <div className='w-full h-[calc(24rem_*_3)] lg:h-96 bg-zinc-300 flex items-center justify-center gap-4 pt-6 pb-8'>
+    <motion.div
+      className='w-full h-[calc(24rem_*_3)] lg:h-96 bg-zinc-300 flex items-center justify-center gap-4 pt-6 pb-8'
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        delay: 0.5,
+        x: { duration: 0.75 },
+        default: { ease: 'linear' },
+      }}
+    >
       <div
         id='tools'
         className='w-[calc(36rem)] lg:w-[calc(1000px)] xl:w-[calc(1400px)] lg:h-fit 6 h-fit shadow-2xl bg-white rounded-md px-8 py-4 text-xl font-bold grid grid-cols-1 grid-auto-rows lg:grid-rows-1 lg:grid-cols-3'
@@ -59,7 +69,7 @@ const Tools: React.FC = () => {
           <div></div>
         </div>
       </div>{' '}
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,10 +1,18 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { Fragment } from 'react';
 
 const Main: React.FC = () => {
   return (
     // I had to use a calculated height because it would not pick up the Layouts assigned height
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        delay: 0.5,
+        x: { duration: 0.75 },
+        default: { ease: 'linear' },
+      }}
       id='home'
       className='w-full h-[calc(100vh_/_2)] min-h-[calc(40rem)] bg-zinc-300 flex items-center justify-center gap-4 p-8 '
     >
@@ -31,7 +39,7 @@ const Main: React.FC = () => {
           height='2000'
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
             <Hamburger />
           </div>
           <div className={navclass.navList}>
-            <h3>Menu</h3>
+            <h3 className=''>Menu</h3>
             <ul className='flex flex-col gap-4 font-bold hover:cursor-pointer'>
               <ListItems
                 navItems={navItems}

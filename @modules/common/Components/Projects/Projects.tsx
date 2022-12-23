@@ -1,10 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Github } from '../Icons';
+import { motion } from 'framer-motion';
 
 const Projects: React.FC = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        delay: 0.5,
+        x: { duration: 0.75 },
+        default: { ease: 'linear' },
+      }}
       id='projects'
       className='flex flex-col lg:flex-row w-full min-h-[calc(720px)] bg-zinc-300 items-center justify-center gap-8 lg:gap-24 pt-20 pb-8 pr-8 pl-8'
     >
@@ -66,7 +74,7 @@ const Projects: React.FC = () => {
           </div>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

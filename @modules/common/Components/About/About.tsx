@@ -1,10 +1,16 @@
-import Image from 'next/image';
-import { Fragment } from 'react';
+import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
   return (
     // I had to use a calculated height because it would not pick up the Layouts assigned height
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        delay: 0.5,
+        x: { duration: 0.75 },
+        default: { ease: 'linear' },
+      }}
       id='about'
       className='w-full h-[calc(100vh_/_2)] min-h-[calc(45rem)] flex items-center justify-center gap-2 pt-6 pr-8 pl-8 pb-12'
     >
@@ -37,7 +43,7 @@ const About: React.FC = () => {
           </p>
         </div>
       </div>{' '}
-    </div>
+    </motion.div>
   );
 };
 
