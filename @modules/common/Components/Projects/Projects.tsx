@@ -5,20 +5,13 @@ import { motion } from 'framer-motion';
 
 const Projects: React.FC = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{
-        delay: 0.5,
-        x: { duration: 0.75 },
-        default: { ease: 'linear' },
-      }}
+    <div
       id='projects'
-      className='flex flex-col lg:flex-row w-full min-h-[calc(720px)] bg-zinc-300 items-center justify-center gap-8 lg:gap-24 pt-20 pb-8 pr-8 pl-8'
+      className='flex flex-col 2xl:flex-row w-full min-h-[calc(720px)] bg-zinc-300 items-center justify-center gap-8 2xl:gap-24 pt-20 pb-8 pr-8 pl-8 z-0'
     >
       <div className='flex flex-col gap-8'>
         <div className='w-full flex justify-center '>
-          <h2 className='font-extrabold text-3xl underline decoration-emerald-400 decoration-4 underline-offset-4'>
+          <h2 className='font-extrabold text-3xl underline decoration-emerald-400 decoration-4 underline-offset-4 z-0'>
             Full-Stack Projects
           </h2>
         </div>
@@ -49,7 +42,7 @@ const Projects: React.FC = () => {
           </div>
         </Link>
       </div>
-      <div className='lg:min-h-[calc(600px)] justify-start items-start flex flex-col gap-8'>
+      <div className='2xl:min-h-[calc(600px)] justify-start items-start flex flex-col gap-8'>
         <div className='w-full flex justify-center '>
           <h2 className='font-extrabold text-3xl pl-4 underline decoration-emerald-400 decoration-4 underline-offset-4'>
             Backend
@@ -74,7 +67,7 @@ const Projects: React.FC = () => {
           </div>
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
