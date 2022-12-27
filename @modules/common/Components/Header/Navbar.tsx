@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
 
   return (
     <Fragment>
-      <nav className='w-full flex justify-center items-center h-16 font-extrabold sticky top-0 p-4 bg-zinc-200 z-50'>
+      <nav className='w-full flex justify-center items-center h-16 font-extrabold sticky top-0 p-4 bg-zinc-200 z-50 shadow-md'>
         <div className='w-full 2xl:w-3/4 flex justify-between items-center h-16 font-extrabold sticky top-0 p-4 bg-zinc-200 z-50'>
           <Logo />
           <ul className='hidden md:flex font-bold gap-4 hover:cursor-pointer'>
