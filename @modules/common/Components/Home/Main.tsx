@@ -35,8 +35,8 @@ const Main: React.FC = () => {
           className='h-3/4 lg:h-full w-auto border-4 border-emerald-400  rounded-md'
           alt='https://my-portfolio-deanrtaylor.s3.ap-southeast-1.amazonaws.com/me.png'
           src={'/me.png'}
-          width='1200'
-          height='2000'
+          width='600'
+          height='1000'
         />
       </div>
     </motion.div>
