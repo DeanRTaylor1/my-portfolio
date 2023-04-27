@@ -28,7 +28,7 @@ const Main: React.FC = () => {
             Full Stack Development
           </h2>
           <h2 className='text-lg hover:cursor-pointer hover:opacity-75 lg:text-3xl'>
-            Saigon, Vietnam
+            Hanoi, Vietnam
           </h2>
         </div>{' '}
         <Image
