@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
   return (
     <div
       id='projects'
-      className='flex flex-col  w-full min-h-[calc(720px)] bg-zinc-300 items-center justify-center gap-8 2xl:gap-24 pt-20 pb-8 pr-8 pl-8 z-0'
+      className='flex flex-col  w-full min-h-[calc(720px)]  items-center justify-center gap-8 2xl:gap-24 pt-20 pb-8 pr-8 pl-8 z-0'
     >
       <div className='flex flex-col gap-8'>
         <div className='w-full flex justify-center '>

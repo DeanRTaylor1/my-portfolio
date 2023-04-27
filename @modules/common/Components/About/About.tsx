@@ -12,13 +12,13 @@ const About: React.FC = () => {
         default: { ease: 'linear' },
       }}
       id='about'
-      className='w-full h-[calc(100vh_/_2)] min-h-[calc(45rem)] flex items-center justify-center gap-2 pt-6 pr-8 pl-8 pb-12'
+      className='w-full h-[calc(100vh_/_2)] min-h-[calc(45rem)] flex items-center justify-center gap-2 pt-6 pr-8 pl-8 pb-12 mb-24 2xl:mb-0'
     >
       <div className='flex flex-col w-full lg:w-2/4 h-full items-center justify-start font-extrabold drop-shadow-2xl text-black text-4xl '>
-        <h2 className='pt-8 underline decoration-emerald-400 decoration-4 underline-offset-4'>
+        <h2 className='pt-6 pb-6 mb-12 underline decoration-emerald-400 decoration-4 underline-offset-4'>
           About
         </h2>
-        <div className='h-full flex flex-col gap-8 items-center justify-center'>
+        <div className='h-full flex flex-col gap-8 items-center justify-center pt-4'>
           <p className=' font-bold text-xl'>
             Hi, I&apos;m Dean a web developer and educator, with experience in a
             wide range of technology but mainly focusing on website development
